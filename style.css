@@ -1,0 +1,79 @@
+* {
+    margin:0;
+    border:0;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url("bg.png");
+    background-size: cover;
+    cursor: url('cursor.png'), auto;	
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+}
+
+.fbsLogo {
+    z-index: 20;
+    margin: 0;
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.fbsLogo {
+    margin: auto;
+    display: block;
+    z-index: 10;
+}
+
+.fbsIcons {
+    z-index: 20;
+    margin: 0;
+    position: absolute;
+    top: 62.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.fbsIcons button {
+    -webkit-text-size-adjust:none;
+    color: #FC4E7B;
+    background-color: transparent;
+    font-size: 50;
+    text-align: center;
+    margin: 50px;
+    transition: transform 0.5s;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    cursor: url('cursor1.png'), auto;
+}
+
+.fbsIcons button:hover {
+    transform: scale(1.25)
+}
+
+.obamja {
+    position: absolute;
+    right: -50px;
+    bottom: 100px;
+}
+
