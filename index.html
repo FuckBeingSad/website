@@ -1,18 +1,25 @@
 <html>
     <head>
-        <title>FBS</title>
+        <title>FuckBeingSad</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="shortcut icon" href="https://media.discordapp.net/attachments/740321380398137353/871883077528481832/mc.png" />
         <script src="main.js"></script>
         <script src="https://kit.fontawesome.com/efcf7450e3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
     <body>
-        <img src="fbs.png" class="fbsLogo">
+        <img src="fbs.png" class="fbsLogo animate__animated animate__fadeInDown">
         <div class="fbsIcons">
-            <button class="btn" onclick="openLink('steam')"><i class="fab fa-steam"></i></button>
-            <button class="btn" onclick="openLink('twitter')"><i class="fab fa-twitter"></i></button>
-            <button class="btn" onclick="openLink('youtube')"><i class="fab fa-youtube"></i></button>
+            <button class="btn" onclick="openLink('steam')"><i style="animation-delay: 1s;" class="fab fa-steam animate__animated animate__bounceIn"></i></button>
+            <button class="btn" onclick="openLink('twitter')"><i style="animation-delay: 1s;" class="fab fa-twitter animate__animated animate__bounceIn"></i></button>
+            <button class="btn" onclick="openLink('youtube')"><i style="animation-delay: 1s;" class="fab fa-youtube animate__animated animate__bounceIn"></i></button>
         </div>
-        <img src="obamja.png" class="obamja" id="llama" style="visibility: hidden;">
+        <img src="obamja.png" class="obamja animate__animated animate__infinite animate__bounce" id="llama" style="visibility: hidden; animation-delay: 9s;">
+        <audio id="song" src="goaway.mp3" autoplay loop></audio>
+        <script>
+            var audio = document.getElementById("song");
+            audio.volume = 0.1;
+            audio.play();
+        </script>
     </body>
 </html>

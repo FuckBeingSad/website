@@ -30,10 +30,17 @@ function openLink(link) {
 }
 
 const rndInt = Math.floor(Math.random() * 100) + 1
+var x = 0;
+var titleText = ["F", "Fu", "Fuc", "Fuck", "FuckB", "FuckBe", "FuckBei", "FuckBein", "FuckBeing", "FuckBeingS", "FuckBeingSa", "FuckBeingSad", "FuckBeingSa", "FuckBeingS", "FuckBeing", "FuckBein", "FuckBei", "FuckBe", "FuckB", "Fuck", "Fuc", "Fu", "F", "&#65279;"];
+
+function loop(){
+	document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+}
 
 document.addEventListener('DOMContentLoaded', (event) => {
     var img = document.getElementById('llama');
-    if (rndInt === 1) {
+    if (rndInt !== 1) {
         img.style.visibility = 'visible';
     }
+    setInterval(loop, 300);
 })
