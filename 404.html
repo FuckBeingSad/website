@@ -4,13 +4,20 @@
         <link rel="stylesheet" type="text/css" href="404.css">
     </head>
     <body>
-        <img class="obamja" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/08/Purple_Carpeted_Llama.png">
+        <img class="obamja" id="obamja" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/08/Purple_Carpeted_Llama.png">
         <p id="text" class="whytext">WHY ARE YOU HERE.</p>
         <audio id="song" src="WHY.mp3" autoplay loop webkit-playsinline="true" playsinline="true"></audio>
         <script>
             var audio = document.getElementById("song");
             audio.volume = 0.1;
             audio.play
+            var obamja = document.getElementById("obamja");
+            obamja.style.width = 200
+            let count = 200
+            setInterval(function () {
+                console.log()
+                obamja.style.width = count++
+            }, 200)
             var text = document.getElementById("text")
             setTimeout(function () {
                 text.innerHTML = "TELL ME."
