@@ -15,11 +15,10 @@
             <button class="btn" onclick="openLink('youtube')"><i style="animation-delay: 1s;" class="fab fa-youtube animate__animated animate__bounceIn"></i></button>
         </div>
         <img src="obamja.png" class="obamja animate__animated animate__infinite animate__bounce" id="llama" style="visibility: hidden; animation-delay: 9s;">
-        <audio id="song" src="goaway.mp3" autoplay loop></audio>
+        <audio id="song" src="goaway.mp3" autoplay loop webkit-playsinline="true" playsinline="true"></audio>
         <script>
             var audio = document.getElementById("song");
             audio.volume = 0.1;
-            audio.play();
         </script>
     </body>
 </html>
