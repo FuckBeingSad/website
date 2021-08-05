@@ -39,8 +39,8 @@ function loop(){
 
 document.addEventListener('DOMContentLoaded', (event) => {
     var img = document.getElementById('llama');
-    if (rndInt !== 1) {
+    //if (rndInt === 1) {
         img.style.visibility = 'visible';
-    }
+    //}
     setInterval(loop, 300);
 })

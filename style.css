@@ -68,6 +68,35 @@ body {
     cursor: url('cursor1.png'), auto;
 }
 
+.audit p {
+    opacity: 1;
+    z-index: 20;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    color: white;
+    top: 75.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
+}
+
+.audit img {
+    opacity: 1;
+    width: 150px;
+    z-index: 20;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 85.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
+}
+
+
 .fbsIcons button:hover {
     transform: scale(1.25)
 }
