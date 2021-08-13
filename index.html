@@ -20,15 +20,29 @@
             <button class="btn" onclick="openLink('youtube')"><i style="animation-delay: 1s;" class="fab fa-youtube animate__animated animate__bounceIn"></i></button>
             <button class="btn" onclick="openLink('?')"><i style="animation-delay: 1s;" class="fas fa-question animate__animated animate__bounceIn"></i></button>
         </div>
-        <div class="audit">
+        <div class="audit" hidden>
             <p>Dane “audit” Johnon</p>
             <img src="https://media.discordapp.net/attachments/769866312046346260/872703088123863080/image0.png">
         </div>
-        <img src="obamja.png" class="obamja animate__animated animate__infinite animate__bounce" id="llama" style="visibility: hidden; animation-delay: 9s;">
+        <img src="obamja.png" onclick="lol()" class="obamja animate__animated animate__infinite animate__bounce" id="llama" style="visibility: hidden; animation-delay: 9s;">
+        <img src="obamja_eye.png" class="obamjaeye" id="llamaeye" style="visibility: hidden;">
         <audio id="song" src="goaway.mp3" autoplay loop webkit-playsinline="true" playsinline="true"></audio>
+        <audio id="boom" src="boom.mp3"></audio>
         <script>
             var audio = document.getElementById("song");
             audio.volume = 0.1;
+            audio.play();
+            var boom  = document.getElementById("boom");
+            function lol() {
+                boom.play()
+                var f = document.getElementById('llamaeye');
+                if (f.style.visibility = "hidden") {
+                    f.style.visibility = 'visible';
+                    setTimeout(() => {
+                        f.style.visibility = 'hidden';
+                    }, 3000)
+                }   
+            }
         </script>
     </body>
 </html>
