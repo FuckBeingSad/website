@@ -27,6 +27,9 @@ function openLink(link) {
     if (link === "youtube") {
         window.open("https://www.youtube.com/channel/UCt0BLi9KXORaQ8-oPgbcOSw", '_blank');
     }
+    if (link === "?") {
+        window.open("https://fuckbeingsad.club/cheats/", '_blank');
+    }
 }
 
 const rndInt = Math.floor(Math.random() * 100) + 1
