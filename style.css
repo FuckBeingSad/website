@@ -99,7 +99,8 @@ body {
 
 
 .fbsIcons button:hover {
-    transform: scale(1.25)
+    transform: scale(1.25);
+    outline: none;
 }
 
 .obamja {
