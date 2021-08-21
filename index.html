@@ -12,6 +12,48 @@
         <meta content="https://fuckbeingsad.club/fbs.png" property="og:image" />
         <meta content="#FC4E7B" data-react-helmet="true" name="theme-color" />
     </head>
+    <div class="experimentSAOModalRoot">
+        <!-- Modal -->
+        <div class="modal fade sao" data-keyboard="false" data-backdrop="static" id="SAOModal" tabindex="-1" role="dialog" aria-labelledby="SAOModalLabel" aria-hidden="true">
+            <div class="modal-dialog closed" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-xs-center">
+                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>-->
+                        <h4 class="modal-title" id="SAOModalTitle"></h4>
+                    </div>
+                    <div class="modal-body text-xs-center c-vcenter c-hcenter p-x-3">
+                        <span id="SAOModalBody"></span>
+                    </div>
+                    <div class="modal-footer container-fluid p-y-2">
+                        <div class="row">
+                            <div class="col-xs-6 c-hcenter text-xs-center btnholder" id="SAOModalAccept">
+                                <div class="SAOOuterCircle o">
+                                    <!--<button type="button" class="btn btn-sao bg-info" id="SAOModalAccept">
+                                        <div class="SAOInnerIcon o circle"></div>
+                                    </button>-->
+                                </div>
+                            </div>
+                            <div class="col-xs-6 c-hcenter text-xs-center btnholder" id="SAOModalDeny">
+                                <div class="SAOOuterCircle x">
+                                    <!--<button type="button" class="btn btn-sao bg-danger" id="SAOModalDeny">
+                                        <div class="SAOInnerIcon x">
+                                            &#10060;
+                                        </div>
+                                    </button>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="col-xs-12 m-t-1">
+                            <p>Debug options</p>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Force close</button>
+                            <button type="button" class="btn btn-info btn-toggle">Toggle collapse</button>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
     <body>
         <img src="fbs.png" class="fbsLogo animate__animated animate__fadeInDown">
         <div class="fbsIcons">
@@ -28,6 +70,13 @@
         <img src="obamja_eye.png" class="obamjaeye" id="llamaeye" style="visibility: hidden;">
         <audio id="song" src="goaway.mp3" autoplay loop webkit-playsinline="true" playsinline="true"></audio>
         <audio id="boom" src="boom.mp3"></audio>
+        <audio id="saoMenuOpenAudio">
+            <source src="https://decentm.github.io/sao-ui/sound/sao_menu_open.wav">
+        </audio>
+        
+        <audio id="saoMenuSelectAudio">
+            <source src="https://decentm.github.io/sao-ui/sound/sao_menu_select.wav">
+        </audio>
         <script>
             var audio = document.getElementById("song");
             audio.volume = 0.1;
@@ -45,4 +94,17 @@
             }
         </script>
     </body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            var saoMenuOpenAudio = document.getElementById("saoMenuOpenAudio");
+            var saoMenuSelectAudio = document.getElementById("saoMenuSelectAudio");
+        });
+    </script>
+    <link rel="stylesheet" href="https://decentm.github.io/sao-ui/bootstrap.min.css" charset="utf-8">
+    <link rel="stylesheet" href="https://decentm.github.io/sao-ui/utility.css" charset="utf-8">
+    <script src="https://decentm.github.io/sao-ui/experiments.js"></script>
 </html>
