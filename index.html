@@ -3,7 +3,6 @@
         <title>FuckBeingSad</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="shortcut icon" href="https://media.discordapp.net/attachments/740321380398137353/871883077528481832/mc.png" />
-        <script src="main.js"></script>
         <script src="https://kit.fontawesome.com/efcf7450e3.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <meta content="FuckBeingSad" property="og:title" />
@@ -11,6 +10,9 @@
         <meta content="https://fuckbeingsad.club" property="og:url" />
         <meta content="https://fuckbeingsad.club/fbs.png" property="og:image" />
         <meta content="#FC4E7B" data-react-helmet="true" name="theme-color" />
+        <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+
+
     </head>
     <div class="experimentSAOModalRoot">
         <!-- Modal -->
@@ -54,8 +56,8 @@
                 </div>
             </div>
         </div>
-    <body>
-        <img src="fbs.png" class="fbsLogo animate__animated animate__fadeInDown">
+    <body id="body">  
+        <img src="fbs.png" class="fbsLogo animate__animated animate__flipInX">
         <div class="fbsIcons">
             <button class="btn" style="outline: none;" onclick="openLink('steam')"><i style="animation-delay: 1s;" class="fab fa-steam animate__animated animate__bounceIn"></i></button>
             <button class="btn" style="outline: none;" onclick="openLink('twitter')"><i style="animation-delay: 1s;" class="fab fa-twitter animate__animated animate__bounceIn"></i></button>
@@ -79,7 +81,11 @@
         </audio>
         <script>
             var audio = document.getElementById("song");
-            audio.volume = 0.1;
+            audio.volume = 0.05;
+            document.getElementById("body").addEventListener("click",() => {
+                audio.play();
+                audio.volume = 0.05;
+            });
             var boom  = document.getElementById("boom");
             function lol() {
                 boom.play()
@@ -106,4 +112,5 @@
     <link rel="stylesheet" href="https://decentm.github.io/sao-ui/bootstrap.min.css" charset="utf-8">
     <link rel="stylesheet" href="https://decentm.github.io/sao-ui/utility.css" charset="utf-8">
     <script src="https://decentm.github.io/sao-ui/experiments.js"></script>
+    <script src="main.js"></script>
 </html>

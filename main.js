@@ -57,3 +57,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     //}
     setInterval(loop, 300);
 })
+
+
+setTimeout(function () {
+    let birthdays = {
+        "6/1": "vops",
+        "10/2": "sownah"
+    }
+    let currentDate = new Date();
+    var month = currentDate.getUTCMonth() + 1; //months from 1-12
+    var day = currentDate.getUTCDate();
+    if (birthdays[`${month}/${day}`]) {
+        let name = birthdays[`${month}/${day}`]
+        saoModal("Happy Birthday!", `Today is ${name}'s birthday! Make sure to wish ${name} a happy birthday!`, "Great.", "Now suffer.", true)
+        saoModal("Happy Birthday!", `Today is ${name}'s birthday! Make sure to wish ${name} a happy birthday!`, "Great.", "Now suffer.", false)
+    }
+}, 1500)
