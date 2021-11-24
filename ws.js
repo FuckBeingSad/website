@@ -1,4 +1,4 @@
-let socket = new WebSocket("ws://fbsWs.itsvops.repl.co");
+let socket = new WebSocket("wss://fbsWs.itsvops.repl.co");
 
 socket.onopen = function(e) {
     //console.log('connected to fbs websocket')
