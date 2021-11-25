@@ -96,6 +96,7 @@ body {
 .audit img {
     opacity: 1;
     width: 150px;
+    height: 140px;
     z-index: 20;
     margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
