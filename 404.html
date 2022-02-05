@@ -12,11 +12,11 @@
             audio.volume = 0.1;
             audio.play
             var obamja = document.getElementById("obamja");
-            obamja.style.width = 200
+            obamja.style.height = 200
             let count = 200
             setInterval(function () {
-                console.log()
-                obamja.style.width = count++
+                count = count + 3
+                obamja.style.height = count;
             }, 200)
             var text = document.getElementById("text")
             setTimeout(function () {

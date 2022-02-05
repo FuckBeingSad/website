@@ -1,28 +1,37 @@
 document.addEventListener('contextmenu', event => event.preventDefault());
+
+var pong = false;
 document.onkeydown = function(e) {
     if(event.keyCode == 123) {
         audio.volume = 0.05
-        saoModal("What the fuck?", "Did you just try to open the developer tools?", "Idiot.", "Atleast you're not in denial about it, I guess.")
+        saoModal("why", "Did you just try to open the developer tools?", "Idiot.", "Atleast you're not in denial about it, I guess.")
+        return false;
+    }
+    if(event.keyCode == 80) {
+        if (pong === false) {
+            pong = true;
+            initPong()
+        }
         return false;
     }
     if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
         audio.volume = 0.05
-        saoModal("What the fuck?", "Did you just try to open the developer tools?", "Idiot.", "Atleast you're not in denial about it, I guess.")
+        saoModal("why", "Did you just try to open the developer tools?", "Idiot.", "Atleast you're not in denial about it, I guess.")
         return false;
     }
     if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
         audio.volume = 0.05
-        saoModal("What the fuck?", "Did you just try to open the developer tools?", "Idiot.", "Atleast you're not in denial about it, I guess.")
+        saoModal("why", "Did you just try to open the developer tools?", "Idiot.", "Atleast you're not in denial about it, I guess.")
         return false;
     }
     if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
         audio.volume = 0.05
-        saoModal("What the fuck?", "Did you just try to open the developer tools?", "Idiot.", "Atleast you're not in denial about it, I guess.")
+        saoModal("why", "Did you just try to open the developer tools?", "Idiot.", "Atleast you're not in denial about it, I guess.")
         return false;
     }
     if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
         audio.volume = 0.05
-        saoModal("What the fuck?", "Did you just try to open the developer tools?", "Idiot.", "Atleast you're not in denial about it, I guess.")
+        saoModal("why", "Did you just try to open the developer tools?", "Idiot.", "Atleast you're not in denial about it, I guess.")
         return false;
     }
   }  
