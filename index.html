@@ -8,38 +8,46 @@
     <script src="/js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" type="image/x-icon" href="https://d.newsweek.com/en/full/1920025/cat-its-mouth-open.jpg">
+    <script src="https://blog.aepkill.com/demos/devtools-detector/devtools-detector.js"></script>
+
 </head>
 
 <!-- cache image before bg loads -->
 <img src="https://fuckbeingsad.com/bg.png" style="display: none;" />
 
 <body>
-    <iframe src="silence.mp3" hidden allow="autoplay" id="audio"></iframe>
-    <audio id="music" src="/deeko.mp3" autoPlay loop webkit-playsinline="true" playsinline="true"></audio>
-    <div class="card animate__animated animate__backInDown">
-        <br>
-        <img draggable="false" class="pfp animate__animated animate__backInDown" src="/fbs_sketch_alt.png">
-        <div>
-            <p class="textBio animate__animated animate__backInDown"></p>
+    <video style="display: none;" id="?!#" src="/video.mp4" class="what" onended="blah()"></video>
+    <div id="AGH">
+        <iframe src="silence.mp3" hidden allow="autoplay" id="audio"></iframe>
+        <audio id="music" src="/deeko.mp3" autoPlay loop webkit-playsinline="true" playsinline="true"></audio>
+        <div class="card animate__animated animate__backInDown">
+            <br>
+            <img draggable="false" class="pfp animate__animated animate__backInDown" src="/fbs_sketch_alt.png">
+            <div>
+                <p class="textBio animate__animated animate__backInDown"></p>
+            </div>
+            </p>
+            <div class="icons animate__animated animate__backInDown">
+                <button value="https://steamcommunity.com/groups/FuckBeingSad" style="color: #F9638B"
+                    onclick="window.open(this.value)">
+                    <i class="fa-brands fa-steam"></i>
+                </button>
+                <button value="https://www.youtube.com/channel/UCt0BLi9KXORaQ8-oPgbcOSw" style="color: #FC4E7B"
+                    onclick="window.open(this.value)">
+                    <i class="fa-brands fa-youtube"></i>
+                </button>
+                <button value="https://twitter.com/FBScollective" style="color: #F9638B"
+                    onclick="window.open(this.value)">
+                    <i class="fa-brands fa-twitter"></i>
+                </button>
+            </div>
         </div>
-        </p>
-        <div class="icons animate__animated animate__backInDown">
-            <button value="https://steamcommunity.com/groups/FuckBeingSad" style="color: #F9638B" onclick="window.open(this.value)">
-                <i class="fa-brands fa-steam"></i>
-            </button>
-            <button value="https://www.youtube.com/channel/UCt0BLi9KXORaQ8-oPgbcOSw" style="color: #FC4E7B" onclick="window.open(this.value)">
-                <i class="fa-brands fa-youtube"></i>
-            </button>
-            <button value="https://twitter.com/FBScollective" style="color: #F9638B" onclick="window.open(this.value)">
-                <i class="fa-brands fa-twitter"></i>
-            </button>
-        </div>
+
+        <canvas id="canvas"></canvas>
     </div>
     <!--<button value="https://stolenco.de" class="scbutton animate__animated animate__backInDown" onclick="window.open(this.value)">
         <img src="https://stolenco.de/images/logo_transparent.png">
     </button>-->
-    
-  <canvas id="canvas"></canvas>
 </body>
 <script>
     var audio = document.getElementById("music");
@@ -52,7 +60,7 @@
 
     var clicked = false;
     document.querySelector("body").addEventListener("click", () => {
-        if (!clicked) {
+        if (!clicked && !BUSY) {
             clicked = true;
             audio.play();
             audio.volume = 0.1;
