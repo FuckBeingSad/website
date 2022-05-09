@@ -15,10 +15,6 @@ function renderAudioVisualizer() {
     canvas.height = window.innerHeight;
     var ctx = canvas.getContext("2d");
 
-
-    var backgroundImage = new Image(); 
-    backgroundImage.src = 'https://fuckbeingsad.com/bg.png'; 
-
     src.connect(analyser);
     analyser.connect(context.destination);
 
