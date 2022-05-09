@@ -103,8 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             document.querySelector("body").style.backgroundColor = "black";
             video.style.display = "block";
-            video.play();
-            setInterval(toggle_full_screen, 100);
+            video.play();toggle_full_screen()
         }
     });
     devtoolsDetector.launch();
