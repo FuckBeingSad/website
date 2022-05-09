@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function blah() {
-    window.location.href = "https://i.imgur.com/SIQvVsx.jpeg"
+    window.location.href = "https://imgur.com/a/M6RKNUf"
 }
 
 
