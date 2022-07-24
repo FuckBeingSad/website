@@ -86,28 +86,15 @@ const COLORS = [
 ]
 
 
-// on dom load
-document.addEventListener("DOMContentLoaded", function () {
-    var view = document.createElement('div');
-    var audio = document.getElementById("music");
-    var video = document.getElementById("?!#");
-    document.body.appendChild(view);
-
-    devtoolsDetector.addListener(function(isOpen) {
-        if (isOpen)
-            console.log("JOIN US.")
-        if (isOpen &&! BUSY) {
-            BUSY = true;
-            audio.pause();
-            document.querySelector('#AGH').remove()
+function fiveNights() {
+    BUSY = true;
+    audio.pause();
+    document.querySelector('#AGH').remove()
             
-            document.querySelector("body").style.backgroundColor = "black";
-            video.style.display = "block";
-            video.play();toggle_full_screen()
-        }
-    });
-    devtoolsDetector.launch();
-});
+    document.querySelector("body").style.backgroundColor = "black";
+    video.style.display = "block";
+    video.play();toggle_full_screen()
+}
 
 
 function blah() {

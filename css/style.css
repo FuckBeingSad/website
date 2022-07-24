@@ -15,6 +15,48 @@
     user-select: none;
 }
 
+
+.obamja {
+    position: absolute;
+    right: -50px;
+    bottom: 120px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+ 
+.obamja2 {
+    position: absolute;
+    transform: scaleX(-1);
+    left: -50px;
+    bottom: 120px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.obamjaeye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 body {
     overflow: hidden;
     display: flex;
