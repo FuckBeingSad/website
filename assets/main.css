@@ -357,3 +357,17 @@ a {
     top: 360px;
     z-index: 1000;
 }
+
+.missingPage {
+    text-align: center;
+}
+
+.missingPage h1 {
+    font-weight: 800;
+    font-size: 100px;
+}
+
+.missingPage h3 {
+    font-weight: 500;
+    font-size: 40px;
+}
