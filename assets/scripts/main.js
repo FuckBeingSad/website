@@ -13,6 +13,8 @@ document.querySelector("body").addEventListener("click", () => {
     if (clicked === false) {
         clicked = true;
         audio.play();
+        audioControl.classList.remove("fa-play");
+        audioControl.classList.add("fa-pause");
     }
 });
 
@@ -23,12 +25,12 @@ function pauseMusic() {
     var audioControl = document.getElementById("audioController");
     if (audio.paused) {
         audio.play();
-        audioControl.classList.remove("fa-pause");
-        audioControl.classList.add("fa-play");
-    } else {
-        audio.pause();
         audioControl.classList.remove("fa-play");
         audioControl.classList.add("fa-pause");
+    } else {
+        audio.pause();
+        audioControl.classList.remove("fa-pause");
+        audioControl.classList.add("fa-play");
     }
 }
 
