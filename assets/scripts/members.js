@@ -5,8 +5,8 @@ const links = [
         link: 'https://twitter.com/sownah777',
     },
     {
-        name: 'audit',
-        link: 'https://twitter.com/playeraudit',
+        name: 'glare',
+        link: 'https://twitter.com/glare_ow',
     },
     {
         name: 'vops',
