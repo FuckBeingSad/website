@@ -5,8 +5,8 @@ const links = [
         link: 'https://twitter.com/sownah777',
     },
     {
-        name: 'glare',
-        link: 'https://twitter.com/glare_ow',
+        name: 'audit',
+        link: 'https://twitter.com/audit162',
     },
     {
         name: 'vops',
@@ -14,7 +14,7 @@ const links = [
     },
     {
         name: 'samu',
-        link: 'https://twitter.com/444samu',
+        link: 'https://twitter.com/G59samu',
     },
     {
         name: 'jfared',
