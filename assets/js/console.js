@@ -1095,7 +1095,7 @@ var consoleLine = new Typed('#user-line', {
 
                                 $('.user-line3 .typed-cursor').css('display', 'none');
                                 var consoleLine = new Typed('#console-line2', {
-                                    strings: ['<span class="folder">└─── <em>assets</em></span><br><span class="enter">&emsp;&emsp;├─── members.html</span><br><span class="twitter">&emsp;&emsp;├─── twitter.html</span><br><span class="tiktok">&emsp;&emsp;├─── tiktok.html</span><br><span class="instagram">&emsp;&emsp;├─── instagram.html</span><br><span class="youtube">&emsp;&emsp;├─── youtube.html</span><br><span class="vops-item">&emsp;&emsp;└─── stolen_by_vops.txt</span>'],
+                                    strings: ['<span class="folder">└─── <em>assets</em></span><br><span class="enter">&emsp;&emsp;├─── members.html</span><br><span class="twitter">&emsp;&emsp;├─── twitter.html</span><br><span class="tiktok">&emsp;&emsp;├─── tiktok.html</span><br><span class="blockgame">&emsp;&emsp;├─── blockgame.html</span><br><span class="vops-item">&emsp;&emsp;└─── stolen_by_vops.txt</span>'],
                                     typeSpeed: 0,
                                     backSpeed: 0,
                                     cursorChar: '',
@@ -1122,12 +1122,8 @@ var consoleLine = new Typed('#user-line', {
                                             window.open("https://www.tiktok.com/@fuckbeingsad");
                                         });
 
-                                        $('span.instagram').on('click', function () {
-                                            window.open("https://www.instagram.com/fbscollective");
-                                        });
-
-                                        $('span.youtube').on('click', function () {
-                                            window.open("https://www.youtube.com/channel/UCt0BLi9KXORaQ8-oPgbcOSw");
+                                        $('span.blockgame').on('click', function () {
+                                            window.open("https://blockgame.us");
                                         });
                                     }
 
