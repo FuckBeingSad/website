@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>FuckBeingSad</title>
+    <script src="https://kit.fontawesome.com/8fffd4e04a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/x-icon" href="https://d.newsweek.com/en/full/1920025/cat-its-mouth-open.jpg">
+</head>
+
+<!-- cache image before bg loads -->
+<img src="/img/bg.png" style="display: none;" />
+
+<body>
+    <audio id="music" src="music.mp3" autoPlay loop webkit-playsinline="true" playsinline="true"></audio>
+    <div class="card">
+        <img draggable="false" width="128" src="/img/404.png">
+        <p class="text404">404</p>
+    </div>
+</body>
+<script>
+    var audio = document.getElementById("music");
+    audio.volume = 0.05;
+
+    document.querySelector("body").addEventListener("click", () => {
+        audio.play();
+        audio.volume = 0.05;
+    });
+</script>
+
+</html>

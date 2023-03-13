@@ -1,126 +1,61 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FuckBeingSad</title>
-    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/2Ip8sfx.png">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Sofia">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Play">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/fonts/nunito-sans/style.css">
-    <link rel="stylesheet" href="assets/fonts/marsek/style.css">
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/scripts/main.js" defer></script>
-    <script src="assets/scripts/members.js" defer></script>
-    <script src="assets/scripts/cat.js" defer></script>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.webp" type="image/webp">
+    <title>fuckbeingsad.com</title>
 </head>
 
 <body>
-    <img src="/assets/images/header-background.png" hidden>
-    <img src="/assets/images/logo.png" hidden>
-    <img src="/assets/images/button.png" hidden>
-    <img src="/assets/images/button-steam.png" hidden>
-    <img src="/assets/images/button-sc.png" hidden>
-    <div class="wrapper">
-        <button onclick="pauseMusic()" class="audioController">
-            <i class="fa fa-pause" id="audioController"></i>
-        </button>
-        <header class="header">
-            <div class="header__container">
-                <a class="header__logo">
-                    <img src="assets/images/logo.png" alt="FBS">
-                </a>
-            </div>
-        </header>
-        <main class="main">
-            <div class="main__container">
-                <audio id="music" src="/assets/music.mp3" autoPlay loop></audio>
-                <img src="/assets/images/obamja.png" onmouseover="runAway()" class="obamja" style="margin-left: 10px;">
-                <div class="socials">
-                    <a href="https://twitter.com/FBScollective" target="_blank"
-                        class="socials__button socials__button--twitter">
-                        Follow Us On
-                        <span>Twitter</span>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCt0BLi9KXORaQ8-oPgbcOSw" target="_blank"
-                        class="socials__button socials__button--youtube">
-                        Subscribe On
-                        <span>Youtube</span>
-                    </a>
-                    <a href="https://www.tiktok.com/@fuckbeingsad" target="_blank"
-                        class="socials__button socials__button--tiktok">
-                        Follow Us On
-                        <span>TikTok</span>
-                    </a>
-                    <a href="https://steamcommunity.com/groups/FuckBeingSad" target="_blank"
-                        class="socials__button socials__button--steam">
-                        View Us On
-                        <span>Steam</span>
-                    </a>
-                    <a href="https://BlockGame.US" target="_blank"
-                        class="socials__button socials__button--stolencode">
-                        Join Us On
-                        <span>BlockGame</span>
-                    </a>
-                    <a href="https://www.instagram.com/fbscollective" target="_blank"
-                        class="socials__button socials__button--instagram">
-                        Folllow Us On
-                        <span>Instagram</span>
-                    </a>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__info">
-                    <div class="footer__copyright">
-                        &copy;
-                        <span id="copyright">
-                            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-                        </span>
-                        FuckBeingSad
-                    </div>
-                    <div class="footer__meta">
-                        Made with love by Padang.
-                    </div>
-                </div>
-                <ul class="footer__links">
-                </ul>
-                <ul class="footer__socials">
-                    <li class="footer__socials__item">
-                        <a href="https://www.instagram.com/fbscollective">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="footer__socials__item">
-                        <a href="https://www.tiktok.com/@fuckbeingsad">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                    </li>
-                    <li class="footer__socials__item">
-                        <a href="https://steamcommunity.com/groups/FuckBeingSad">
-                            <i class="fab fa-steam"></i>
-                        </a>
-                    </li>
-                    <li class="footer__socials__item">
-                        <a href="https://twitter.com/FBScollective">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="footer__socials__item">
-                        <a href="https://www.youtube.com/channel/UCt0BLi9KXORaQ8-oPgbcOSw">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+    <div class="console">
+        <div class="console-wrap user-line">
+            <p>user@fuckbeingsad.com<span>:<em>~</em></span></p>
+            <p id="user-line"></p>
+        </div>
+        <div class="console-wrap">
+            <p id="console-line"></p>
+        </div>
+        <div class="console-wrap user-line2">
+            <p>user@fuckbeingsad.com<span>:<em>~</em></span></p>
+            <p id="user-line2"></p>
+        </div>
+        <div class="console-wrap user-line3">
+            <p>user@fuckbeingsad.com<span>:<em>~</em></span></p>
+            <p id="user-line3"></p>
+        </div>
+        <div class="console-wrap">
+            <p id="console-line2"></p>
+        </div>
     </div>
+
+    <div class="dot"></div>
+    <img src="assets/img/bgs/fbs.png" class="bg">
+    <div class="video">
+    </div>
+
+    <div class="songs">
+        <audio class="anthem" src="assets/songs/main.mp3"></audio>
+    </div>
+
+    <header>
+        <img src="/assets/img/logo.png" height="200" class="logo">
+        <div class="volume-slider">
+            <input id="volume-slider" type="range" min="0" max="100" step="1" value="50">
+        </div>
+        <!-- <p class="discord">Discord</p> -->
+    </header>
+
+    <div class="top"></div>
+    <div class="team"></div>
+    <div class="team-2"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/load.js"></script>
 </body>
 
 </html>

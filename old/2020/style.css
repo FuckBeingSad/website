@@ -1,0 +1,309 @@
+@font-face {
+    font-family: "SAO";
+    font-weight: 400;
+    src:
+        url("https://decentm.github.io/sao-ui/sword_art_online_font_by_darkblackswords-d5nssbp.otf")
+}
+
+* {
+    margin:0;
+    border:0;
+    overflow: hidden;
+}
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: url("bg.png");
+    background-size: cover;
+    cursor: url('cursor.png'), auto;	
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
+}
+
+.fbsLogo {
+   z-index: 200;
+   margin-top: -150px;
+   filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
+   user-drag: none;
+   -webkit-user-drag: none;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   height: auto;
+   width: 100%;
+   min-width:100%;
+   max-width:100%;
+}
+
+.fbsIcons {
+    z-index: 20;
+    margin: 0;
+    position: absolute;
+    top: 62.5%;
+    left: 50%;
+    white-space: nowrap;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
+}
+
+.fbsIcons button {
+    -webkit-text-size-adjust:none;
+    color: #FC4E7B;
+    background-color: transparent;
+    font-size: 50;
+    text-align: center;
+    margin: 40px;
+    transition: transform 0.5s;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    cursor: url('cursor1.png'), auto;
+}
+
+.audit p {
+    opacity: 1;
+    z-index: 20;
+    margin: 0;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    color: white;
+    top: 75.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.audit img {
+    opacity: 1;
+    height: 115px;
+    z-index: 20;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 85.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+.fbsIcons button:hover {
+    transform: scale(1.25);
+    outline: none;
+}
+
+.obamja {
+    position: absolute;
+    right: -50px;
+    bottom: 100px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.obamjaeye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.modal.sao.in .modal-dialog {		
+    transform: scale(1);		
+}
+
+.experimentSAOModalRoot .modal.sao .modal-dialog {
+   transform: scale(.9);
+   transition-duration: .075s;
+   transition-property: transform;
+   transition-timing-function: ease-in-out;
+   user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -webkit-user-select: none;
+}
+
+.experimentSAOModalRoot .modal.sao span {
+   cursor: default
+}
+
+.experimentSAOModalRoot .modal.sao .SAOOuterCircle {
+   cursor: pointer
+}
+
+.experimentSAOModalRoot .circle .btn-sao {
+   border-radius: 100%;
+   height: 50px;
+   margin-top: 4px;
+   outline: none !important;
+   width: 50px;
+}
+
+.experimentSAOModalRoot .SAOOuterCircle.o {
+   background-image: url("https://decentm.github.io/sao-ui/Yes.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 64px;
+   width: 64px;
+}
+
+.experimentSAOModalRoot .SAOOuterCircle.x {
+   background-image: url("https://decentm.github.io/sao-ui/No.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 64px;
+   width: 64px;
+}
+
+.experimentSAOModalRoot .SAOOuterCircle.info {
+   border-color: #3577B3;
+}
+
+.experimentSAOModalRoot .SAOOuterCircle.danger {
+   border-color: #D23C69;
+}
+
+.experimentSAOModalRoot .modal-content {
+   background-color: #EEEEEE;
+   border-color: white;
+   border-radius: 0;
+   border-style: solid;
+   border-width: 2px;
+   font-family: "SAO";
+   opacity: .9;
+}
+
+.experimentSAOModalRoot .modal-dialog .modal-title {
+   font-size: 26px
+}
+
+.experimentSAOModalRoot .modal-dialog .modal-body,
+.experimentSAOModalRoot .modal-dialog .modal-body * {
+   transition-duration: .2s;
+   transition-property: height, padding, opacity, box-shadow;
+   transition-timing-function: ease-in-out;
+}
+
+.experimentSAOModalRoot .modal-dialog.open .modal-body * {
+   transition-delay: .05s
+}
+
+.experimentSAOModalRoot .modal-dialog.closed .modal-body * {
+   transition-duration: .15s
+}
+
+.experimentSAOModalRoot .modal-dialog .modal-body {
+   background-color: #D8D8D8;
+   box-shadow:
+       0 10px 25px -15px rgba(0, 0, 0, .5) inset,
+       0 -10px 25px -15px rgba(0, 0, 0, .5) inset;
+   color: #808080;
+   font-size: 20px;
+   width: 450px;
+}
+
+.experimentSAOModalRoot .modal-dialog.closed .modal-body {
+   height: 0;
+   padding-bottom: 0;
+   padding-top: 0;
+}
+
+.experimentSAOModalRoot .modal-dialog.closed .modal-body * {
+   opacity: 0
+}
+
+.experimentSAOModalRoot .modal-dialog.open .modal-body {
+   height: 100px;
+   padding-bottom: 0;
+   padding-top: 0;
+}
+
+.experimentSAOModalRoot .modal-footer .btnholder,
+.experimentSAOModalRoot .modal-dialog .modal-title,
+.experimentSAOModalRoot .modal-footer .btnholder .btn {
+   transition-property: opacity;
+   transition-timing-function: ease;
+}
+
+.experimentSAOModalRoot .modal-footer .btnholder,
+.experimentSAOModalRoot .modal-dialog .modal-title {
+   transition-duration: .2s;
+}
+
+.experimentSAOModalRoot .modal-footer .btnholder .btn {
+   transition-duration: .075s;
+}
+
+.experimentSAOModalRoot .modal-footer .btnholder div:hover {
+   opacity: .8
+}
+
+.experimentSAOModalRoot .modal-footer .btnholder div:active {
+   opacity: .6
+}
+
+.experimentSAOModalRoot .modal-dialog.closed .modal-footer .btnholder,
+.experimentSAOModalRoot .modal-dialog.closed .modal-title {
+   opacity: 0
+}
+
+.experimentSAOModalRoot .modal {
+ padding: 0 !important;
+ text-align: center;
+}
+
+.experimentSAOModalRoot .modal:before {
+ content: '';
+ display: inline-block;
+ height: 100%;
+ margin-right: -4px;
+ vertical-align: middle;
+}
+
+.experimentSAOModalRoot .modal-dialog {
+ display: inline-block;
+ text-align: left;
+ vertical-align: middle;
+}
