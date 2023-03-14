@@ -63,6 +63,27 @@
             }
         },
         {
+            "name": "samu",
+            "tag": "#0129",
+            "badge": "inner circle",
+            "icon": "/assets/img/members/samu.png",
+            "socials": {
+                "instagram": "g59samu",
+                "twitter": "G59samu",
+                "steam": "444samu"
+            },
+            "bg": "samu.mp4",
+            "mbg": "samu.png",
+            "song": "samu.mp3",
+            "theme": {
+                "bgcolor": {
+                    "color1": "#1a1a1a",
+                    "color2": "#1a1a1a"
+                },
+                "text": "#fff"
+            }
+        },
+        {
             "name": "Jfared",
             "tag": "#7500",
             "badge": "inner circle",
