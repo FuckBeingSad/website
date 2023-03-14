@@ -84,6 +84,26 @@
             }
         },
         {
+            "name": "tech",
+            "tag": "#3161",
+            "badge": "inner circle",
+            "icon": "/assets/img/members/tech.png",
+            "socials": {
+                "twitter": "tech843",
+                "twitch": "tech843_"
+            },
+            "bg": "tech.png",
+            "mbg": "tech.png",
+            "song": "tech.mp3",
+            "theme": {
+                "bgcolor": {
+                    "color1": "#1a1a1a",
+                    "color2": "#1a1a1a"
+                },
+                "text": "#fff"
+            }
+        },
+        {
             "name": "Jfared",
             "tag": "#7500",
             "badge": "inner circle",
