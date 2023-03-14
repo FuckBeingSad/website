@@ -22,6 +22,27 @@
             }
         },
         {
+            "name": "audit",
+            "tag": "#5056",
+            "badge": "owner",
+            "icon": "/assets/img/members/audit.jpg",
+            "socials": {
+                "youtube": "auditxo",
+                "twitter": "audit162",
+                "twitch": "auditxo"
+            },
+            "bg": "audit.mp4",
+            "mbg": "audit.png",
+            "song": "audit.mp3",
+            "theme": {
+                "bgcolor": {
+                    "color1": "#1a1a1a",
+                    "color2": "#1a1a1a"
+                },
+                "text": "#fff"
+            }
+        },
+        {
             "name": "vops",
             "tag": "#2070",
             "badge": "developer",

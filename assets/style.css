@@ -1407,7 +1407,7 @@ header,
 
 .team-2,
 [class~=top] {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 [class~=top] {
@@ -1504,7 +1504,7 @@ header,
     [class~=team],
     [class~=top],
     [class~=team-2] {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

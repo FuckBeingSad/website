@@ -188,10 +188,9 @@ jQuery(document).ready(function ($) {
                     }
                     member.find('.socials-content').append(socialsDiv);
                     
-                    if (index < 2) {
+                    if (index < 3) {
                         member.appendTo('.top');
-                    }
-                    if (index >= 2) {
+                    } else {
                         member.appendTo('.team');
                     }
                 });
