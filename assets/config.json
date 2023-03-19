@@ -121,6 +121,25 @@
                     "color2": "#1a1a1a"
                 },
                 "text": "#fff"
+            },
+            {
+            "name": "St6xy",
+            "tag": "#5169",
+            "badge": "inner circle",
+            "icon": "/assets/img/members/st6xy.png",
+            "socials": {
+                "twitter": "st6xyfoxhoppin",
+                "youtube": "channel/UC-6G4BkJqAFcbXDHy4RIX4A"
+            },
+            "bg": "st6xy.png",
+            "mbg": "st6xy.png",
+            "song": "st6xy.mp3",
+            "theme": {
+                "bgcolor": {
+                    "color1": "#1a1a1a",
+                    "color2": "#1a1a1a"
+                },
+                "text": "#fff"
             }
         }
     ],
