@@ -103,27 +103,7 @@
                 "text": "#fff"
             }
         },
-        {
-            "name": "Jfared",
-            "tag": "#7500",
-            "badge": "inner circle",
-            "icon": "/assets/img/members/jfared.png",
-            "socials": {
-                "twitch": "jfared",
-                "twitter": "Jfaredlol"
-            },
-            "bg": "jfared.mp4",
-            "mbg": "jfared.png",
-            "song": "jfared.mp3",
-            "theme": {
-                "bgcolor": {
-                    "color1": "#1a1a1a",
-                    "color2": "#1a1a1a"
-                },
-                "text": "#fff"
-            }
-        },
-        {
+                {
             "name": "St6xy",
             "tag": "#5169",
             "badge": "inner circle",
@@ -135,6 +115,26 @@
             "bg": "st6xy.png",
             "mbg": "st6xy.png",
             "song": "st6xy.mp3",
+            "theme": {
+                "bgcolor": {
+                    "color1": "#1a1a1a",
+                    "color2": "#1a1a1a"
+                },
+                "text": "#fff"
+            }
+        },
+        {
+            "name": "Jfared",
+            "tag": "#7500",
+            "badge": "inner circle",
+            "icon": "/assets/img/members/jfared.png",
+            "socials": {
+                "twitch": "jfared",
+                "twitter": "Jfaredlol"
+            },
+            "bg": "jfared.png",
+            "mbg": "jfared.png",
+            "song": "jfared.mp3",
             "theme": {
                 "bgcolor": {
                     "color1": "#1a1a1a",
